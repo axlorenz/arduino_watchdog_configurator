@@ -1,9 +1,9 @@
 // #include <Arduino.h>
-#include "Array.h"
+#include "array/Array/Array.h"
 #include "crc/CRC.h"
 
-#include "WdInput.hpp"
-#include "WdResponse.hpp"
+#include "include/WdInput.hpp"
+#include "include/WdResponse.hpp"
 
 void setup() {
   // Initialize the serial communication at 9600 baud rate

@@ -1,9 +1,10 @@
 #ifndef WD_RESPONSE_HPP
 #define WD_RESPONSE_HPP
 
-#include "Array.h"
-#include "crc/CRC.h"
+#include "../array/Array/Array.h"
+#include "../crc/CRC.h"
 #include <stdint.h>
+
 
 template <size_t StatusSize = 1> class WdResponse {
 private:
