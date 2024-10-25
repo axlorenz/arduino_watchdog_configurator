@@ -1,0 +1,15 @@
+# Ignore build directory
+build/
+
+# Ignore temporary files
+*.bin
+*.hex
+*.elf
+*.eep
+*.tmp
+*.log
+*.bak
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db

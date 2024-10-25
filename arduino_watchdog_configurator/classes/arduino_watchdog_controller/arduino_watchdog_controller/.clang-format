@@ -1,0 +1,15 @@
+---
+BasedOnStyle: LLVM  # You can change this to Google, Mozilla, or WebKit for other predefined styles
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never  # You can use 'ForIndentation' if you prefer tabs for indentation
+ColumnLimit: 100  # Maximum line length before wrapping
+BreakBeforeBraces: Attach  # Use 'Allman' if you prefer that style
+AllowShortIfStatementsOnASingleLine: false
+SpaceAfterCStyleCast: true
+PointerAlignment: Right  # Align pointer '*' or '&' to variable names
+AlignConsecutiveDeclarations: true
+AlignTrailingComments: true
+ReflowComments: true
+SortIncludes: true
+IndentCaseLabels: true  # Indent case labels inside switch statements
