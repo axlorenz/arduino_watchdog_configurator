@@ -3,6 +3,7 @@
 #include "crc/CRC.h"
 
 #include "include/WdInput.hpp"
+#include "include/WdManager.hpp"
 #include "include/WdResponse.hpp"
 
 void setup() {
@@ -22,6 +23,8 @@ void setup() {
 
   auto &rawResponseMsg = wdResponse.getRawMsg();
   Serial.write(rawResponseMsg.data(), sizeof(rawResponseMsg));
+
+  WdManager wdManager{};
 }
 
 void loop() {

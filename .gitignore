@@ -1,4 +1,5 @@
 # Ignore build directory
+.vscode/
 build/
 
 # Ignore temporary files

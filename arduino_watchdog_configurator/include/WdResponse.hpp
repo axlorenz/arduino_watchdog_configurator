@@ -5,7 +5,6 @@
 #include "../crc/CRC.h"
 #include <stdint.h>
 
-
 template <size_t StatusSize = 1> class WdResponse {
 private:
   // Start bytes for the response
