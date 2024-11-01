@@ -71,6 +71,11 @@ public:
     TimeoutError = kTimeoutErrorByte      // Message timeout occurred
   };
 
+  enum class ErrorCodeSetWdStatus : uint8_t {
+    Success = 0,
+    OutOfRangeAccess = 1
+  };
+
   // Public members
   uint8_t mAck;                                   // Acknowledgment byte
   using StatusArray = Array<uint8_t, StatusSize>; // Status bytes array
@@ -92,12 +97,12 @@ public:
     return true; // Always successful
   }
 
-  bool setWdStatus(WdStatus wDStatusIn, uint8_t index = 0) {
+  ErrorCodeSetWdStatus setWdStatus(WdStatus wDStatusIn, uint8_t index = 0) {
     if (index < StatusSize) {
       mStatus[index] = static_cast<uint8_t>(wDStatusIn);
-      return true; // Successful
+      return ErrorCodeSetWdStatus::OutOfRangeAccess; // Successful
     }
-    return false; // Index out of range
+    return ErrorCodeSetWdStatus::Success; // Index out of range
   }
 };
 

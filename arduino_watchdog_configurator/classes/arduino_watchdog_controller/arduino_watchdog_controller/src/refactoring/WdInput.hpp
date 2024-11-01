@@ -5,9 +5,9 @@
 
 class WdInputMsg {
   private:
-    const uint8_t mStart_bytes[2] = {kInputMsgStartByte1, kInputMsgStartByte2}; // Start bytes
-    uint8_t       mCmd;                                                         // Command byte
-    uint16_t      mCrc16;                                                       // CRC16 checksum
+    const uint8_t mStartBytes[2] = {kInputMsgStartByte1, kInputMsgStartByte2}; // Start bytes
+    uint8_t       mCmd;                                                        // Command byte
+    uint16_t      mCrc16;                                                      // CRC16 checksum
 
   public:
     static constexpr uint8_t kInputMsgStartByte1 = 'W'; // Start byte 1

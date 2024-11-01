@@ -17,7 +17,7 @@ private:
 public:
   WdManager() : mWdInputMsg{}, mWdInputByteProcessor{mWdInputMsg} {}
 
-  bool processMsgByte(uint8_t newByteIn) { currentTimeMs = millis(); }
+  bool processMsgByte(const uint8_t newByteIn) { currentTimeMs = millis(); }
 };
 
 #endif
